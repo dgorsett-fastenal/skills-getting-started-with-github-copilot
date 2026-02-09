@@ -90,11 +90,38 @@ section h3 {
 }
 
 .participants-list {
-  list-style-type: disc;
-  margin-left: 22px;
+  margin-left: 0;
   margin-bottom: 0;
   color: #333;
   font-size: 15px;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #e3e3e3;
+  transition: background 0.2s;
+}
+.participant-item:last-child {
+  border-bottom: none;
+}
+.participant-email {
+  flex: 1;
+  padding-left: 4px;
+}
+.delete-icon {
+  color: #c62828;
+  font-size: 18px;
+  margin-left: 12px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 50%;
+  transition: background 0.2s, color 0.2s;
+}
+.delete-icon:hover {
+  background: #ffebee;
+  color: #b71c1c;
 }
 
 .participants-none {
